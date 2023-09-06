@@ -617,16 +617,20 @@ a {
 	margin-top: 40px;
 }
 
-.footer .socila-link {
+.footer .social-link {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	width: 28px;
 	height: 28px;
-	/* background-color: orange; */
+	background-color: #F9F9F9;
 }
 
-.footer .socila-link:hover {
+.footer .social-link + .social-link {
+	margin-left: 16px;
+}
+
+.footer .social-link:hover {
 	background-color: #ece7e7;
 	border-radius: 3px;
 }
