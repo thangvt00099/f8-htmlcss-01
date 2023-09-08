@@ -51,8 +51,17 @@ a {
 	overflow: hidden;
 }
 /* =========Header=========*/
+.fix-header {
+	background: #E6F0FF;
+	padding-top: 26px;
+	position: sticky;
+	top: -26px;
+	z-index: 1;
+}
 
-.header {
+.hero-wrap {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	background: #E6F0FF;
 	height: 100vh;
@@ -61,8 +70,8 @@ a {
 .navbar {
 	display: flex;
 	align-items: center;
-	padding-top: 38px;
-	/* padding: 12px 0; */
+	/* padding-top: 38px; */
+	padding: 12px 0;
 	/* background:orange; */
 }
 
@@ -172,7 +181,7 @@ a {
 	justify-content: space-between;
 }
 
-.clients .slogans a {
+.clients .slogans a:not(:nth-child(3)) {
 	display: flex;
 	align-items: center;
 	height: 90px;
