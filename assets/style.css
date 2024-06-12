@@ -186,7 +186,7 @@ a {
 	justify-content: space-between;
 }
 
-.clients .slogans a:not(:nth-child(3)) {
+.clients .slogans a {
 	display: flex;
 	align-items: center;
 	height: 90px;
@@ -194,7 +194,7 @@ a {
 	border-radius: 12px;
 }
 
-.clients .slogans a:hover:not(:nth-child(3)){
+.clients .slogans a:hover{
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -326,7 +326,8 @@ a {
 }
 
 .features .list {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
 	margin-top: 70px;
 }
@@ -437,7 +438,7 @@ a {
 
 .stats .info .desc {
 	color: #5A6473;
-	max-width: 309px;
+	width: 309px;
 	margin-top: 20px;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -612,7 +613,7 @@ a {
 }
 
 .footer .row-top {
-	gap: 185px;
+	column-gap: 185px;
 }
 
 .footer .heading {
